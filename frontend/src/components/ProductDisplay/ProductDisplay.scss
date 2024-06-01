@@ -1,0 +1,103 @@
+.ProductDisplay{
+    display: flex;
+    margin: 0 170px;
+
+    .left{
+        display: flex;
+        gap: 15px;
+
+        .imgList{
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+
+            img{
+                height: 160px;
+            }
+        }
+        .mainDisplayImg{
+    width: 585px;
+    height: 700px;
+        }
+
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        margin: 0 70px;
+
+        h1{
+            color: #3d3d3d;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        .star{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 1rem;
+            color: #1c1c1c;
+            font-size: 1rem;
+        }
+        .prices{
+            display: flex;
+            margin: 40px 0;
+            gap: 30px;
+            font-size: 1.5rem;
+            font-weight: 700;
+
+            .oldPrice{
+                text-decoration: line-through;
+                color: #8B94A3;
+            }
+            .newPrice{
+                color: var(--purple);
+            }
+        }
+
+        .size {
+            h1{
+                margin-top: 2rem;
+                color: var(--purple);
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+        }
+.sizes{
+    display: flex;
+    margin: 30px 0;
+    gap: 20px;
+
+    div{
+        padding: 18px 24px;
+        background: #fbfbfb;
+        border: 1px solid #121212;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+}
+
+button{
+    width: 200px;
+    font-size: 1rem;
+    padding: 20px 40px;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--lightpurple);
+    margin-bottom: 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.category{
+    margin-top: 10px;
+
+    span{
+        font-weight: 600;
+    }
+}
+    }
+}

@@ -1,0 +1,103 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.3rem;
+  box-shadow: 0 1px 3px -2px #121212;
+  background: linear-gradient(
+    to bottom,
+    rgba(240, 240, 240, 0.5),
+    rgba(224, 224, 224, 0.5)
+  );
+  backdrop-filter: blur(5px);
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 10vh;
+
+
+  .logo {
+    img {
+      height: 3.5rem;
+    }
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    a {
+      text-decoration: none;
+      color: #121212;
+    font-size: 1.1rem;
+
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    hr {
+      border: none;
+      height: 3px;
+      width: 75%;
+      border-radius: 5px;
+      background: #121212;
+    }
+  }
+
+  .loginCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .cartCount {
+      width: 15px;
+      height: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -2rem;
+      margin-left: -1.8rem;
+      border-radius: 50%;
+      font-size: 1rem;
+      background: #e3170a;
+      color: #fff;
+    }
+  }
+
+  .loginText {
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+
+    &:hover::after {
+      content: "Login";
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 5px;
+      background: var(--lightpurple);
+      color: #fff;
+      border-radius: 5px;
+      font-size: 10px;
+    }
+  }
+}
