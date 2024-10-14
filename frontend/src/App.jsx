@@ -32,8 +32,9 @@ const App = () => {
           <Route path="/mens" element={<Category banner={men_banner} category="men" />} />
           <Route path="/womens" element={<Category banner={women_banner} category="women" />} />
           <Route path="/kids" element={<Category banner={kids_banner} category="kid" />} />
-          <Route path="/product" element={<Product />} />
-          <Route path=":productId" element={<Product />} />
+          <Route path="/product/:productId" element={<Product />} />
+          {/* <Route path=":productId" element={<Product />} /> */}
+
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
@@ -41,6 +42,13 @@ const App = () => {
       </BrowserRouter>
     </div>
   );
+
+
+
+
+
+
+  
 };
 
 export default App;

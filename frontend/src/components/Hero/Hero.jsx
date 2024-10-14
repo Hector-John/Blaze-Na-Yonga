@@ -9,7 +9,6 @@ const Hero = () => {
       <img src={heroBg} alt="" className="heroBg" />
 
       <div className="texts">
-        
         <p>CASUAL, OFFICIAL & EVERYDAY</p>
         <p>
           Effortlessly blend comfort <br /> & style!
